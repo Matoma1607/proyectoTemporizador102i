@@ -18,68 +18,73 @@
   </head>
   <body>
     <header>
-      <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container">
-            <a class="navbar-brand" href="./index.html">Temporizador</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./index.html"
-                    >Inicio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Otros</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Search"
-                  minlength="2"
-                  maxlength="100"
-                />
-                <button class="btn btn-outline-light" type="submit">
-                  Buscar
-                </button>
-              </form>
-            </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">Temporizador</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Otros</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+                minlength="2"
+                maxlength="100"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Buscar
+              </button>
+            </form>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="container text-center">
-            <h1 class="display-4">Temporizador</h1>
-            <div class="form-group">
-                <input type="number" class="form-control input-horas" placeholder="Horas" min="0">
-                <input type="number" class="form-control input-minutos" placeholder="Minutos" min="0" max="59">
-                <input type="number" class="form-control input-segundos" placeholder="Segundos" min="0" max="59">
+      <section class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h1 class="contador">00:00:00</h1>
+                <div class="input-group mb-3">
+                  <input
+                    type="number"
+                    class="form-control tiempo-inicial"
+                    placeholder="Ingresa segundos"
+                  />
+                  <button class="btn btn-primary iniciar">Iniciar</button>
+                  <button class="btn btn-secondary pausar">Pausar</button>
+                  <button class="btn btn-danger reiniciar">Reiniciar</button>
+                </div>
+              </div>
             </div>
-            <p class="display-1 temporizador-display">00:00:00</p>
-            <div class="btn-group mt-3">
-                <button class="btn btn-success btn-iniciar">Iniciar</button>
-                <button class="btn btn-warning btn-pausar">Pausar</button>
-                <button class="btn btn-danger btn-resetear">Reset</button>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="text-center py-4 bg-dark-subtle">
       <p>&copy;Todos los derechos reservados</p>

@@ -4,9 +4,15 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-.container {
-  margin-top: 50px;
+.contador {
+  font-size: 3rem;
 }
-.display-1 {
-  font-size: 4rem;
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  margin: 0 5px;
 }
