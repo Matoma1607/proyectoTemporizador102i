@@ -65,7 +65,22 @@
         </nav>
       </header>
     </header>
-    <main></main>
+    <main>
+        <section class="container text-center">
+            <h1 class="display-4">Temporizador</h1>
+            <div class="form-group">
+                <input type="number" class="form-control input-horas" placeholder="Horas" min="0">
+                <input type="number" class="form-control input-minutos" placeholder="Minutos" min="0" max="59">
+                <input type="number" class="form-control input-segundos" placeholder="Segundos" min="0" max="59">
+            </div>
+            <p class="display-1 temporizador-display">00:00:00</p>
+            <div class="btn-group mt-3">
+                <button class="btn btn-success btn-iniciar">Iniciar</button>
+                <button class="btn btn-warning btn-pausar">Pausar</button>
+                <button class="btn btn-danger btn-resetear">Reset</button>
+            </div>
+        </section>
+    </main>
     <footer class="text-center py-4 bg-dark-subtle">
       <p>&copy;Todos los derechos reservados</p>
     </footer>
